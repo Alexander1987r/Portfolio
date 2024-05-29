@@ -3,6 +3,7 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 export default defineConfig({
     root:"./src",
+    base:"/Portfolio/",
     publicDir:"../public",
     build:{
         outDir:"../dist",
