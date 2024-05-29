@@ -1,0 +1,180 @@
+@use '../variables' as *;
+@media(min-width:500px){
+  .about-me {
+    padding-top: 100px;
+    &__title {
+      font-size: 70px;
+      line-height: 80px;
+      max-width: 350px;
+      margin: 0 auto 20px auto;
+    }
+    &__subtitle {
+      margin-bottom: 20px;
+      font-size: 19px;
+    }
+    &__text {
+      margin-bottom: 50px;
+      font-size: 22px;
+      line-height: 22px;
+    }
+  }
+  /*works*/
+  .works{
+    &__title {
+      font-size: 50px;
+      line-height: 75px;
+     }
+     &__web-item {
+      padding-bottom: 20px;
+     }
+     &__web-link {
+      margin-bottom: 20px;
+      padding: 20px 20px 0 20px;
+    }
+    &__web-text {
+      font-size: 18px;
+    }
+    &__web-image {
+      width: 100%;
+      height:273px;
+    }
+  }
+  /*footer*/
+  .contacts {
+    padding: 70px 0;
+    &__title {
+      font-size: 50px;
+      line-height: 75px;
+      margin-bottom: 20px;
+    }
+    &__text {
+      margin-bottom: 20px;
+    }
+    &__subtext {
+      font-size: 18px;
+    }
+  }
+}
+@media(min-width:768px){
+  .header{
+    padding:22px 0;
+    &__button{
+      display: none;
+    }
+  }
+  .navigation{
+    position: relative;
+    right: 0;
+    top: 0;
+    min-width:0;
+    &__list{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+    }
+    &__item:not(:last-child) {
+      margin-bottom:0;
+      margin-right: 50px;
+    }
+    &__link {
+      font-size: 18px;
+    }
+  }
+  .about-me {
+    padding-top: 100px;
+    text-align: start;
+    &__container{
+      display: flex;
+      justify-content: space-between;
+    }
+    &__content{
+      padding: 50px 0;
+    }
+    &__title {
+      font-size: 70px;
+      line-height: 80px;
+      max-width: 350px;
+      margin-bottom: 20px;
+
+    }
+    &__subtitle {
+      margin-bottom:100px;
+      font-size: 19px;
+    }
+    &__text {
+      margin-bottom: 0px;
+      font-size: 22px;
+      line-height: 22px;
+
+    }
+    &__image{
+      width: 50%;
+      object-fit: cover;
+    }
+  }
+  .skills {
+    padding: 70px 0;
+
+    &__title {
+      font-size: 50px;
+      line-height: 75px;
+      margin-bottom:20px;
+    }
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
+    &__item {
+      padding: 100px 25px 25px 25px;
+      margin-bottom: 0;
+      &::before{
+        top: 25px;
+        left: 25px;
+      }
+    }
+    &__item-title{
+      font-size: 24px;
+      margin-bottom:20px;
+    }
+  }
+  .works{
+    padding: 70px 0 50px 0;
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__buttons-list {
+      margin:0 auto 30px auto;
+      max-width: 350px;
+    }
+    &__web {
+      padding-bottom: 75px;
+    }
+    &__web-text {
+      font-size: 22px;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  }
+}
+@media(min-width:1200px){
+  .header__logo{
+    font-size: 54px;
+   }
+  .navigation{
+    &__link {
+      font-size: 24px;
+    }
+  }
+  .about-me {
+    &__content{
+      padding: 100px 0;
+    }
+    &__subtitle {
+      font-size: 25px;
+    }
+    &__text {
+      font-size: 30px;
+    }
+  }
+}

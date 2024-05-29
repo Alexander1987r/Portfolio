@@ -1,0 +1,14 @@
+@use 'default' as *;
+@use 'components/header' as *;
+@use 'components/about' as *;
+@use 'components/skills' as *;
+@use 'components/work' as *;
+
+@use 'components/footer' as *;
+
+@use 'components/media' as *;
+@import 'normalize.css';
+@import '../../node_modules/swiper/swiper-bundle.css'
+
+
+

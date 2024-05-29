@@ -1,0 +1,78 @@
+@use '../variables' as *;
+.skills {
+  font-family: "Onest",sans-serif;
+  padding-top: 50px;
+  &__title {
+    font-family: $font-second-family;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 500;
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    padding:  95px 15px 15px 15px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.323);
+    position: relative;
+    margin-bottom: 25px;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 64px;
+      height: 64px;
+      top: 15px;
+      left: 15px;
+      background-image: url(/image/skills/html.png);
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &:hover .skills__item-title{
+      color: red;
+    }
+  }
+  &__item_css::before{
+    background-image: url(/image/skills/css.png);
+  }
+  &__item_css:hover .skills__item-title{
+    color: rgb(14, 114, 245);
+  }
+
+  &__item_js::before{
+    background-image: url(/image/skills/js.png);
+  }
+  &__item_js:hover .skills__item-title{
+    color: rgb(7, 199, 7);
+  }
+  &__item_react::before{
+    background-image: url(/image/skills/react.png);
+    background-size: 90% auto;
+    background-color: rgb(112, 99, 99);
+    border-radius: 50%;
+  }
+  &__item_react:hover .skills__item-title{
+    color: rgb(60, 139, 241);
+  }
+  &__item-title{
+    text-transform: uppercase;
+    font-family: $font-second-family;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-bottom: 20px;
+    transition: color .5s ease-in-out;
+  }
+  &__text {
+    line-height: 28px;
+  }
+}
+
+
+
+
+
+

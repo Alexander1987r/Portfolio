@@ -1,0 +1,106 @@
+@use "../variables" as *;
+.works {
+padding: 50px 0 20px 0;
+background-color: $bg;
+font-family: $font-second-family;
+ &__title {
+  text-align: center;
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 500;
+ }
+ &__buttons-list {
+  margin:0 auto 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 290px;
+}
+&__buttons-item {
+}
+&__buttons-item:not(:last-child){
+  margin-right: auto;
+}
+&__button {
+  padding: 5px;
+  font-size: 20px;
+  line-height: 36px;
+  background-color: $white;
+  border-radius: 5px 15px 15px 15px;
+  width: 80px;
+  &:hover{
+    background-color:$dark-blue;
+    color: $white;
+  }
+}
+&__button_active {
+ color: $white;
+ background-color:$dark-blue ;
+}
+&__content {
+}
+&__content-item {
+  display: none;
+  min-height: 244px;
+}
+&__web {
+  padding-bottom: 50px;
+}
+&__web-wrapper {
+}
+&__web-item {
+  border-radius: 20px ;
+  background-color: $white;
+  padding-bottom: 10px;
+
+  &:hover .works__web-text{
+    transform: translateY(-5px);
+  }
+  &:hover .works__web-image{
+    transform: scaleX(1.01);
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.323);
+  }
+}
+&__web-link {
+  margin-bottom: 20px;
+  padding: 10px 10px 0 10px;
+
+}
+&__web-image {
+  width: 100%;
+  height: 160px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.323);
+  object-fit: contain;
+  transition: all 0.8s  ease-in-out;
+}
+&__web-text {
+  font-family: "Onest",sans-serif;
+  text-align: center;
+  line-height: 27px;
+  transition: transform 0.5s ease-in-out;
+}
+&__web-pagination .swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: $orange;
+}
+&__web-pagination .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+}
+}
+.active{
+  display: block;
+}
+
+
+
+.swiper {
+}
+
+.swiper-wrapper {
+}
+
+.swiper-slide {
+}
+
+.swiper-pagination {
+}
