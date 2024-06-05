@@ -1,7 +1,7 @@
 //навигация
 const navigation=document.querySelector('.navigation');
 const  navigationLink=navigation.querySelectorAll('.navigation__link');
-console.log(navigationLink);
+
 //тогл бургера
 const headerButton=document.querySelector('.header__button');
 
